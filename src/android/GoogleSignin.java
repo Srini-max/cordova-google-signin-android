@@ -27,7 +27,7 @@ implements GoogleApiClient.OnConnectionFailedListener {
     private static final int RC_SIGN_IN = 9001;
 
     private static final String ACTION_LOGIN = "glogin";
-    private static final String ACTION_SET_SERVER_CLIENT_ID = "setServerClientId";
+    private static final String ACTION_SET_SERVER_CLIENT_ID = "496146475990-vugtthf7j59cb98n55nvfe61g00ovfut.apps.googleusercontent.com";
     private static final String ACTION_SILENT_LOGIN = "silentLogin";
     private static final String ACTION_LOGOUT = "logout";
     private static final String ACTION_REVOKE_ACCESS = "revoke";
@@ -35,12 +35,12 @@ implements GoogleApiClient.OnConnectionFailedListener {
 
     private CallbackContext mCurrentLoginCallback;
 
-    private String mServerClientId = ACTION_SET_SERVER_CLIENT_ID;
+    private String mServerClientId = "496146475990-vugtthf7j59cb98n55nvfe61g00ovfut.apps.googleusercontent.com";
 
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
-        mServerClientId = ACTION_SET_SERVER_CLIENT_ID;
+        mServerClientId = "496146475990-vugtthf7j59cb98n55nvfe61g00ovfut.apps.googleusercontent.com";
     }
 
     @Override
@@ -127,7 +127,7 @@ implements GoogleApiClient.OnConnectionFailedListener {
 
     private void setServerClientId(String id, CallbackContext callbackContext) {
         if (mServerClientId != null) {
-            mServerClientId = ACTION_SET_SERVER_CLIENT_ID;
+            mServerClientId = "496146475990-vugtthf7j59cb98n55nvfe61g00ovfut.apps.googleusercontent.com";
             callbackContext.success();
         } else {
             callbackContext.error("invalid server client id");
